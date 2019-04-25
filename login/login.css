@@ -1,3 +1,5 @@
+@import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -20,4 +22,66 @@ li a {
 
 li a:hover {
   background-color: #111;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("thebeaconsite5.jpg") no-repeat;
+  background-size: cover;
+}
+
+.login-box {
+  width: 280px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.login-box h1 {
+  font-size: 30px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  margin-right: 195px;
+  padding: 13px 0;
+  position: relative;
+  left: 20px;
+}
+
+.text-box1 {
+  overflow: hidden;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.text-box2 {
+  overflow: hidden;
+  width: 100%;
+  font-size: 20px;
+  padding: 8 0px;
+  margin: 4px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+.text-box1 i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.text-box2 i {
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox-1 input {
+  border: none;
+  margin: none;
 }

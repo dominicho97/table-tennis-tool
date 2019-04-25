@@ -10,15 +10,14 @@ define('__CONFIG__', true);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Document</title>
     <link rel="stylesheet" href="login.css" />
 </head>
 <body>
     
 
-    <div className="nav">
+   <div className="nav">
       <ul>
         <li>
           <a className="active" href="../index.php">
@@ -26,7 +25,7 @@ define('__CONFIG__', true);
           </a>
         </li>
         <li>
-          <a href="./login/login.php">Log In</a>
+          <a href="./login.php">Log In</a>
         </li>
         <li>
           <a href="../register/register.php">Register</a>
@@ -40,11 +39,24 @@ define('__CONFIG__', true);
       </ul>
     </div>
 
-    <h2>Login</h2>
-    <form action="login.php" method='POST'>
-        Email:<input type="email" name= 'email'>
-        Password:<input type="password" name= 'password'><br><br>
-        <input type="submit" value='Log In  ' name= 'login'> Or <a href='../register/register.php'>Create an account</a>
+
+    <div class="login-box">
+    <h1>Login</h1>
+
+
+    
+    <form action="login.php"  method='POST'>
+
+    <div class="text-box1">
+    <i class="fas fa-user"></i>
+        <input type="email" name= 'email' placeholder="Email">
+</div>
+
+    <div class="text-box2">
+    <i class="fas fa-lock"></i>
+       <input type="password" name= 'password' placeholder="Password"><br><br>
+</div>
+        <input type="submit" value='Log In'  class="btn" name= 'login'> Or <a href='../register/register.php'>Create an account</a>
 
     </form>
 </body>
