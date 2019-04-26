@@ -12,6 +12,7 @@ define('__CONFIG__', true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -36,16 +37,18 @@ define('__CONFIG__', true);
         </li>
       </ul>
     </div>
-    <h2>Register</h2>
-
+   
+  <div class="signup-form">
     <form action="register.php" method='POST'>
-        UserName: <input type="text" name= 'username'><br>
-        Email:<input type="email" name= 'email'><br>
-        Password:<input type="password" name= 'password'><br>
-        Confirm Password: <input type="password" name= 'password2'><br>
-        Group: <input type="text" name= 'room'><br>
-        <input name= 'register' type="submit" value='Register'> OR <a href='../login/login.php'>Already have an account?</a>
-
+    <h1>Register</h1>
+        <input type="text" name= 'username' placeholder="Username " class="field">
+       <br>
+        <input type="email" name= 'email'placeholder="Email"class="field"><br>
+        <input type="password" name= 'password'placeholder="Password"class="field"><br>
+       <input type="password" name= 'password2'placeholder= "Confirm password" class="field"><br>
+        <input type="text" name= 'room'placeholder="Group"class="field"><br>
+        <input name= 'register' type="submit"  class="signup-btn" value='Register'>  <a href='../login/login.php'>Already have an account?</a>
     </form>
+</div>
 </body>
 </html>
