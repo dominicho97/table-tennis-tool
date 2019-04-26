@@ -50,5 +50,38 @@ define('__CONFIG__', true);
   <div>Friday</div>
 </div>
 
-<h1>test</h1>
+
+<div class='wrapper-options'>
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+</div>
+
+
 </body>

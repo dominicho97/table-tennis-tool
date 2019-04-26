@@ -39,3 +39,53 @@ define('__CONFIG__', true);
         </li>
       </ul>
     </div>
+
+
+  <div class='wrapper'>
+    <div >Monday</div>
+    <div>Tuesday</div>
+    <div>Wednesday</div>  
+    <div>Thursday</div>
+    <div>Friday</div>
+  </div>
+
+
+    <div class='wrapper-options'>
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+
+  <select>
+    <option value="morning">Morning</option>
+    <option value="noon">Noon</option>
+    <option value="afternoon">Afternoon</option>
+  <select>
+</div>
+
+
+  <div class="grid-container">
+    <div>11:00 - 11:05</div>
+    <div>11:05 - 11:10</div>
+    <div>11:10 - 11:15</div>
+  <div>
+  

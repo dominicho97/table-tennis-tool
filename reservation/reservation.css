@@ -26,3 +26,25 @@ li a:hover {
   display: flex;
   justify-content: space-around;
 }
+
+/* navbar*/
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.wrapper-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
