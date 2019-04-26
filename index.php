@@ -29,5 +29,17 @@
         </li>
       </ul>
     </div>
+
+
+    <div class="main-form">
+    <h1>Table Booker!</h1>
+
+     <a href="./register/register.php"   class="main-btn">
+    <input  value='Register'  class="main-btn" name= 'login'> 
+
+
+    <a href="./login/login.php"   class="main-btn">
+    <input  value='Log In'  class="main-btn" name= 'login'> 
+
 </body>
 </html>

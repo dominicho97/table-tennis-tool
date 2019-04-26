@@ -21,3 +21,53 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+/*nav*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #245060;
+}
+
+.main-form {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(211, 211, 211, 0.562);
+  background: cover;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.main-form h1 {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 40px;
+}
+.main-form input {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  height: 44px;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "montserrat", sans-serif;
+}
+
+.main-btn {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #487eb0;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.8s;
+  text-decoration: none;
+}
