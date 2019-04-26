@@ -40,23 +40,17 @@ define('__CONFIG__', true);
     </div>
 
 
-    <div class="login-box">
+    <div class="login-form">
     <h1>Login</h1>
 
 
     
     <form action="login.php"  method='POST'>
+ 
+        <input type="email" name= 'email' placeholder="Email" class="field"><br>
+       <input type="password" name= 'password' placeholder="Password" class="field"><br><br>
 
-    <div class="text-box1">
-    <i class="fas fa-user"></i>
-        <input type="email" name= 'email' placeholder="Email">
-</div>
-
-    <div class="text-box2">
-    <i class="fas fa-lock"></i>
-       <input type="password" name= 'password' placeholder="Password"><br><br>
-</div>
-        <input type="submit" value='Log In'  class="btn" name= 'login'> Or <a href='../register/register.php'>Create an account</a>
+        <input type="submit" value='Log In'  class="login-btn" name= 'login'>  <a href='../register/register.php'>Create an account</a>
 
     </form>
 </body>

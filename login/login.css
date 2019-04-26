@@ -24,64 +24,70 @@ li a:hover {
   background-color: #111;
 }
 
+/*nav */
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: url("thebeaconsite5.jpg") no-repeat;
-  background-size: cover;
+  background: #245060;
 }
 
-.login-box {
-  width: 280px;
+.login-form {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(211, 211, 211, 0.562);
+  background: cover;
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-}
-
-.login-box h1 {
-  font-size: 30px;
-  border-bottom: 6px solid #4caf50;
-  margin-bottom: 50px;
-  margin-right: 195px;
-  padding: 13px 0;
-  position: relative;
-  left: 20px;
-}
-
-.text-box1 {
   overflow: hidden;
+
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.login-form h1 {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 40px;
+}
+.login-form input {
+  display: block;
   width: 100%;
-  font-size: 20px;
-  padding: 8px 0;
-  margin: 8px 0;
-  border-bottom: 1px solid #4caf50;
-}
-
-.text-box2 {
-  overflow: hidden;
-  width: 100%;
-  font-size: 20px;
-  padding: 8 0px;
-  margin: 4px 0;
-  border-bottom: 1px solid #4caf50;
-}
-
-.text-box1 i {
-  width: 26px;
-  float: left;
+  padding: 0 15px;
+  height: 44px;
   text-align: center;
-}
-
-.text-box2 i {
-  width: 26px;
-  float: left;
-  text-align: center;
-}
-
-.textbox-1 input {
+  box-sizing: border-box;
+  outline: none;
   border: none;
-  margin: none;
+  font-family: "montserrat", sans-serif;
+}
+.field {
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+.login-btn {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: #487eb0;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.login-btn:hover {
+  transform: scale(0.96);
+}
+.login-form a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  transition: 0.8s;
+  display: block;
+}
+.login-form a:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
