@@ -197,13 +197,17 @@ define('__CONFIG__', true);
 </div>
   <script> 
 
-  const morning = document.getElementById('time-morning1');
+  const morning1 = document.getElementById('.time-morning1');
 
 
   const select1 = document.getElementById('selectbox1');
+
+  function hide1(){
     if (select1 === 'noon'){
-    morning.style.display= 'none'
+    morning1.style.visibility= 'hidden';
   };
+  }
+   
 
 
 

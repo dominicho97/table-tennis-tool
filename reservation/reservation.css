@@ -22,12 +22,12 @@ li a:hover {
   background-color: #111;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-around;
+/*nav*/
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
 }
-
-/* navbar*/
 
 .wrapper {
   display: flex;
@@ -35,16 +35,31 @@ li a:hover {
   margin-top: 80px;
   font-size: 18px;
   margin-right: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: white;
+  color: black;
 }
 
 .wrapper-options {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/*--*/
+
+.time-wrapper1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.time-wrapper2 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.time-wrapper3 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
