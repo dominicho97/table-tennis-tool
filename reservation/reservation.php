@@ -96,25 +96,25 @@ define('__CONFIG__', true);
     <button>11:10 - 11:15</button>
 </div>
    <div class="time-morning2">
-    <div>11:00 - 11:05</div>
+   <button>11:00 - 11:05</button>
     <br>
-    <div>11:05 - 11:10</div>
+    <button>11:05 - 11:10</button>
     <br>
-    <div>11:10 - 11:15</div>
+    <button>11:10 - 11:15</button>
 </div>
    <div class="time-morning3">
-    <div>11:00 - 11:05</div>
+    <button>11:00 - 11:05</button>
     <br>
-    <div>11:05 - 11:10</div>
+    <button>11:05 - 11:10</button>
     <br>
-    <div>11:10 - 11:15</div>
+    <button>11:10 - 11:15</button>
 </div>
 <div class="time-morning4">
-    <div>11:00 - 11:05</div>
+<button>11:00 - 11:05</button>
     <br>
-    <div>11:05 - 11:10</div>
+    <button>11:05 - 11:10</button>
     <br>
-    <div>11:10 - 11:15</div>
+    <button>11:10 - 11:15</button>
 </div>
    <div class="time-morning5">
      <button>11:00 - 11:05</button>
