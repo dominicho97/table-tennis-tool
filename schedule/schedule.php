@@ -51,19 +51,19 @@ define('__CONFIG__', true);
 
 
     <div class='wrapper-options'>
-  <select>
+  <select id = "selectbox1" onChange = "changeTime1()">
     <option value="morning">Morning</option>
     <option value="noon">Noon</option>
     <option value="afternoon">Afternoon</option>
   <select>
 
-  <select>
+  <select id = "selectbox2" onChange = "changeTime2()">
     <option value="morning">Morning</option>
     <option value="noon">Noon</option>
     <option value="afternoon">Afternoon</option>
   <select>
 
-  <select>
+  <select id="selectbox3" onChange = "changeTime3()">
     <option value="morning">Morning</option>
     <option value="noon">Noon</option>
     <option value="afternoon">Afternoon</option>
@@ -92,15 +92,31 @@ define('__CONFIG__', true);
   <div>
   
   <script> 
-  
- function changeTime4(){
-  const select4 = document.getElementById('selectbox4');
-  console.log(select4.options[select4.selectedIndex].value)}
+
+  // Select Event
+  function changeTime1(){
+    const select1 = document.getElementById('selectbox1');
+    console.log(select1.options[select1.selectedIndex].value)}
+
+
+  function changeTime2(){
+    const select2 = document.getElementById('selectbox2');
+   console.log(select2.options[select2.selectedIndex].value)}
+
+
+  function changeTime3(){
+    const select3 = document.getElementById('selectbox3');
+    console.log(select3.options[select3.selectedIndex].value)}
 
   
-function changeTime5() {
-  const select5 = document.getElementById('selectbox5');
-  console.log(select5.options[select5.selectedIndex].value)}
+  function changeTime4(){
+    const select4 = document.getElementById('selectbox4');
+    console.log(select4.options[select4.selectedIndex].value)}
+
+  
+  function changeTime5() {
+    const select5 = document.getElementById('selectbox5');
+    console.log(select5.options[select5.selectedIndex].value)}
 
 
 
