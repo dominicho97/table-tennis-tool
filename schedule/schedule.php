@@ -84,41 +84,61 @@ define('__CONFIG__', true);
  
 </div>
 
-
-  <div class="grid-container">
+    <div class="time-morning1">
     <div>11:00 - 11:05</div>
     <div>11:05 - 11:10</div>
     <div>11:10 - 11:15</div>
-  <div>
+    
+    <div>
   
   <script> 
 
-  // Select Event
+  
+
+  const select1 = document.getElementById('selectbox1');
+    if (select1 === 'morning'){
+      console.log('test')
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  // Select events
   function changeTime1(){
     const select1 = document.getElementById('selectbox1');
     console.log(select1.options[select1.selectedIndex].value)}
-
+  
+      changeTime1();
 
   function changeTime2(){
     const select2 = document.getElementById('selectbox2');
    console.log(select2.options[select2.selectedIndex].value)}
-
+   changeTime2();
 
   function changeTime3(){
     const select3 = document.getElementById('selectbox3');
     console.log(select3.options[select3.selectedIndex].value)}
-
+    changeTime3();
   
   function changeTime4(){
     const select4 = document.getElementById('selectbox4');
     console.log(select4.options[select4.selectedIndex].value)}
-
+    changeTime4();
   
   function changeTime5() {
     const select5 = document.getElementById('selectbox5');
     console.log(select5.options[select5.selectedIndex].value)}
 
-
+    changeTime5();
 
 
 </script>
