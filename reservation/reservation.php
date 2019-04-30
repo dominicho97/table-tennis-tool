@@ -203,39 +203,39 @@ define('__CONFIG__', true);
 <!--morning time-->
 <div class="time-wrapper3">
     <div class="time-afternoon1">
-    <div>15:30 - 15:35</div>
+    <button>15:30 - 15:35</button>
     <br>
-    <div>15:35 - 15:40</div>
+    <button>15:35 - 15:40</button>
     <br>
-    <div>15:40 - 13:45</div>
+    <button>15:40 - 13:45</button>
 </div>
    <div class="time-afternoon2">
-    <div>15:30 - 15:35</div>
+       <button>15:30 - 15:35</button>
     <br>
-    <div>15:35 - 15:40</div>
+    <button>15:35 - 15:40</button>
     <br>
-    <div>15:40 - 13:45</div>
+    <button>15:40 - 13:45</button>
 </div>
    <div class="time-afternoon3">
-    <div>15:30 - 15:35</div>
+       <button>15:30 - 15:35</button>
     <br>
-    <div>15:35 - 15:40</div>
+    <button>15:35 - 15:40</button>
     <br>
-    <div>15:40 - 13:45</div>
+    <button>15:40 - 13:45</button>
 </div>
 <div class="time-afternoon4">
-    <div>15:30 - 15:35</div>
+      <button>15:30 - 15:35</button>
     <br>
-    <div>15:35 - 15:40</div>
+    <button>15:35 - 15:40</button>
     <br>
-    <div>15:40 - 13:45</div>
+    <button>15:40 - 13:45</button>
 </div>
    <div class="time-afternoon5">
-    <div>15:30 - 15:35</div>
+      <button>15:30 - 15:35</button>
     <br>
-    <div>15:35 - 15:40</div>
+    <button>15:35 - 15:40</button>
     <br>
-    <div>15:40 - 13:45</div>
+    <button>15:40 - 13:45</button>
 </div>
 </div>
 
