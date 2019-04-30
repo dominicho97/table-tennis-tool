@@ -46,3 +46,12 @@ body {
 }
 
 /*--*/
+
+.time-morning1 {
+  display: inline;
+  position: relative;
+}
+.time-wrapper1 {
+  display: flex;
+  justify-content: space-around;
+}

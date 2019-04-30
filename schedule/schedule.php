@@ -84,22 +84,46 @@ define('__CONFIG__', true);
  
 </div>
 
+<div class="time-wrapper1">
     <div class="time-morning1">
     <div>11:00 - 11:05</div>
     <div>11:05 - 11:10</div>
     <div>11:10 - 11:15</div>
-    
-    <div>
+</div>
+   <div class="time-morning2">
+    <div>11:00 - 11:05</div>
+    <div>11:05 - 11:10</div>
+    <div>11:10 - 11:15</div>
+</div>
+   <div class="time-morning3">
+    <div>11:00 - 11:05</div>
+    <div>11:05 - 11:10</div>
+    <div>11:10 - 11:15</div>
+</div>
+<div class="time-morning4">
+    <div>11:00 - 11:05</div>
+    <div>11:05 - 11:10</div>
+    <div>11:10 - 11:15</div>
+</div>
+   <div class="time-morning5">
+    <div>11:00 - 11:05</div>
+    <div>11:05 - 11:10</div>
+    <div>11:10 - 11:15</div>
+</div>
+</div>
+
+ 
+
   
   <script> 
 
-  
+  const morning = document.getElementById('time-morning1');
+
 
   const select1 = document.getElementById('selectbox1');
-    if (select1 === 'morning'){
-      console.log('test')
-
-  }
+    if (select1 === 'noon'){
+    morning.style.display= 'none'
+  };
 
 
 
