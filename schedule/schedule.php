@@ -40,7 +40,7 @@ define('__CONFIG__', true);
       </ul>
     </div>
 
-
+<!--days-->
   <div class='wrapper'>
     <div >Monday</div>
     <div>Tuesday</div>
@@ -49,7 +49,7 @@ define('__CONFIG__', true);
     <div>Friday</div>
   </div>
 
-
+<!--select boxes-->
     <div class='wrapper-options'>
   <select id = "selectbox1" onChange = "changeTime1()">
     <option value="morning">Morning</option>
@@ -84,6 +84,7 @@ define('__CONFIG__', true);
  
 </div>
 
+<!--morning time-->
 <div class="time-wrapper1">
     <div class="time-morning1">
     <div>11:00 - 11:05</div>
@@ -112,9 +113,56 @@ define('__CONFIG__', true);
 </div>
 </div>
 
- 
+ <!--noon times-->
 
-  
+<div class="time-wrapper2">
+  <div class="time-noon1">
+     <div>12.30 - 12.40</div>
+     <div>12:40 - 12:50</div>
+    <div>12:50 - 13:00</div>
+    <br>
+    <div>13.00 - 13:10</div>
+     <div>13:10 - 13:20</div>
+    <div>13:20 - 13:30</div>
+
+  </div>
+  <div class="time-noon2">
+  <div>12.30 - 12.40</div>
+     <div>12:40 - 12:50</div>
+    <div>12:50 - 13:00</div>
+    <br>
+    <div>13.00 - 13:10</div>
+     <div>13:10 - 13:20</div>
+    <div>13:20 - 13:30</div>
+  </div>
+  <div class="time-noon">
+  <div>12.30 - 12.40</div>
+     <div>12:40 - 12:50</div>
+    <div>12:50 - 13:00</div>
+    <br>
+    <div>13.00 - 13:10</div>
+     <div>13:10 - 13:20</div>
+    <div>13:20 - 13:30</div>
+   </div>
+   <div class="time-noon4">
+   <div>12.30 - 12.40</div>
+     <div>12:40 - 12:50</div>
+    <div>12:50 - 13:00</div>
+    <br>
+    <div>13.00 - 13:10</div>
+     <div>13:10 - 13:20</div>
+    <div>13:20 - 13:30</div>
+   </div>
+  <div class="time-noon5">
+  <div>12.30 - 12.40</div>
+     <div>12:40 - 12:50</div>
+    <div>12:50 - 13:00</div>
+    <br>
+    <div>13.00 - 13:10</div>
+     <div>13:10 - 13:20</div>
+    <div>13:20 - 13:30</div>
+  </div>
+</div>
   <script> 
 
   const morning = document.getElementById('time-morning1');
