@@ -75,11 +75,13 @@ define('__CONFIG__', true);
     <option value="afternoon">Afternoon</option>
   <select>
 
-  <select>
+ 
+  <select class="select-5">
     <option value="morning">Morning</option>
     <option value="noon">Noon</option>
     <option value="afternoon">Afternoon</option>
   <select>
+ 
 </div>
 
 
@@ -89,3 +91,6 @@ define('__CONFIG__', true);
     <div>11:10 - 11:15</div>
   <div>
   
+  <script> src="schedule.js"</script>
+  </body>
+  </html>
