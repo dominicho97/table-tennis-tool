@@ -69,17 +69,17 @@ define('__CONFIG__', true);
     <option value="afternoon">Afternoon</option>
   <select>
 
-  <select>
+  <select id="selectbox4" onChange = "changeTime4()">
     <option value="morning">Morning</option>
     <option value="noon">Noon</option>
     <option value="afternoon">Afternoon</option>
   <select>
 
  
-  <select class="select-5">
-    <option value="morning">Morning</option>
-    <option value="noon">Noon</option>
-    <option value="afternoon">Afternoon</option>
+  <select id="selectbox5" onChange = 'changeTime5()' >
+    <option  value = "morning">Morning</option>
+    <option  value="noon">Noon</option>
+    <option  value="afternoon">Afternoon</option>
   <select>
  
 </div>
@@ -91,6 +91,20 @@ define('__CONFIG__', true);
     <div>11:10 - 11:15</div>
   <div>
   
-  <script> src="schedule.js"</script>
+  <script> 
+  
+ function changeTime4(){
+  const select4 = document.getElementById('selectbox4');
+  console.log(select4.options[select4.selectedIndex].value)}
+
+  
+function changeTime5() {
+  const select5 = document.getElementById('selectbox5');
+  console.log(select5.options[select5.selectedIndex].value)}
+
+
+
+
+</script>
   </body>
   </html>
