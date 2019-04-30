@@ -124,8 +124,8 @@ define('__CONFIG__', true);
     <div>13.00 - 13:10</div>
      <div>13:10 - 13:20</div>
     <div>13:20 - 13:30</div>
-
   </div>
+
   <div class="time-noon2">
   <div>12.30 - 12.40</div>
      <div>12:40 - 12:50</div>
@@ -135,6 +135,7 @@ define('__CONFIG__', true);
      <div>13:10 - 13:20</div>
     <div>13:20 - 13:30</div>
   </div>
+
   <div class="time-noon">
   <div>12.30 - 12.40</div>
      <div>12:40 - 12:50</div>
@@ -144,6 +145,7 @@ define('__CONFIG__', true);
      <div>13:10 - 13:20</div>
     <div>13:20 - 13:30</div>
    </div>
+
    <div class="time-noon4">
    <div>12.30 - 12.40</div>
      <div>12:40 - 12:50</div>
@@ -153,6 +155,7 @@ define('__CONFIG__', true);
      <div>13:10 - 13:20</div>
     <div>13:20 - 13:30</div>
    </div>
+
   <div class="time-noon5">
   <div>12.30 - 12.40</div>
      <div>12:40 - 12:50</div>
@@ -162,6 +165,35 @@ define('__CONFIG__', true);
      <div>13:10 - 13:20</div>
     <div>13:20 - 13:30</div>
   </div>
+</div>
+
+<!--morning time-->
+<div class="time-wrapper3">
+    <div class="time-afternoon1">
+    <div>15:30 - 15:35</div>
+    <div>15:35 - 15:40</div>
+    <div>15:40 - 13:45</div>
+</div>
+   <div class="time-afternoon2">
+    <div>15:30 - 15:35</div>
+    <div>15:35 - 15:40</div>
+    <div>15:40 - 13:45</div>
+</div>
+   <div class="time-afternoon3">
+    <div>15:30 - 15:35</div>
+    <div>15:35 - 15:40</div>
+    <div>15:40 - 13:45</div>
+</div>
+<div class="time-afternoon4">
+    <div>15:30 - 15:35</div>
+    <div>15:35 - 15:40</div>
+    <div>15:40 - 13:45</div>
+</div>
+   <div class="time-afternoon5">
+    <div>15:30 - 15:35</div>
+    <div>15:35 - 15:40</div>
+    <div>15:40 - 13:45</div>
+</div>
 </div>
   <script> 
 
