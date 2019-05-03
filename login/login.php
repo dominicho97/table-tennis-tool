@@ -3,6 +3,27 @@
 define('__CONFIG__', true);
 //require the conf
 //require_once 'inc/config.php';
+include ('../classes/DB.php');
+
+if (isset($_POST['login'])) {
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+
+
+  if (DB::query('SELECT email FROM users WHERE email=:email', array(':email'=>$email))){
+
+   if(password_verify($password, DB::query('SELECT password FROM users WHERE email=:email', array(':email'=>$email))[0]['password'])) {
+    echo 'Logged in!';
+} else {
+    echo 'Incorrect Password!';
+}
+} else {
+echo 'User not registered!';
+
+}
+
+}
+
 ?>
 
 
