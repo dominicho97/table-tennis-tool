@@ -6,6 +6,9 @@ require_once __DIR__ . '/../dao/UserDAO.php';
 class UsersController extends Controller {
 
   public function login() {
+    $UserDAO = new UserDAO();
+    $rooms = $UserDAO->getAllRooms();
+    $this->set('rooms', $rooms);
     $this->set('title', 'Login');
 
     if(isset($_POST['submitLI'])){

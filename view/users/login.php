@@ -19,8 +19,9 @@
           <input type="password" name="passwordR2" placeholder="Password"><br>
           <label for="skill">I am a </label>
           <select name="roomR" form="registerF">
-            <option value="1">lamar</option>
-            <option value="2">second</option>
+          <?php foreach ($rooms as $room): ?>
+            <option value="<?php echo $room["id"] ?>"><?php echo $room["name"] ?></option>
+          <?php endforeach; ?>
           </select>
           <input type="submit" name="submitR" value="REGISTER">
         </form>

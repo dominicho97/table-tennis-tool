@@ -26,4 +26,11 @@ class UserDAO extends DAO {
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
+  public function getAllRooms(){
+    $sql = "SELECT * FROM `rooms` WHERE `id` != '' ORDER BY `id` DESC";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
 }
