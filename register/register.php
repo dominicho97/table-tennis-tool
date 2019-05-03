@@ -10,11 +10,39 @@ if (isset($_POST['register'])) {
   $password = $_POST['password'];
   $password2 = $_POST['password2'];
   
+  if (!DB::query('SELECT username FROM users WHERE username=:username', array(':username'=>$username))){
 
-DB::query('INSERT INTO users VALUES (\'\', :username, :email, :password,:password2)', array(':username'=>$username, ':email'=>$email, ':password'=>$password,':password2'=>$password2, ));
-echo "Success!";
+    if (strlen($username) >= 3 && strlen($username) <= 32){
 
+      if (preg_match('/[a-zA-Z0-9_]+/', $username)){
+
+        if (strlen($password) >= 6 && strlen($password) <= 60){
+
+        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+  DB::query('INSERT INTO users VALUES (\'\', :username, :email, :password,:password2)', array(':username'=>$username, ':email'=>$email, ':password'=>password_hash($password,PASSWORD_BCRYPT ),':password2'=> password_hash($password2, PASSWORD_BCRYPT)));
+  echo "Success!";
+
+        } else {
+          echo 'invalid email';
+        }
+
+      } else{
+        echo 'invalid password!';
+      }
+      } else {
+        echo 'Invalid username';
+      }
+
+} else {
+  echo 'Invalid username!';
 }
+
+  } else{
+    echo 'User already exists!';
+  }
+}
+
 ?>
 
 <!DOCTYPE html>
