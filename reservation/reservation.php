@@ -88,12 +88,12 @@ define('__CONFIG__', true);
 
 <!--morning time-->
 <div class="time-wrapper1">
-    <div class="time-morning1">
-    <button>11:00 - 11:05</button>
+    <div class="time-morning1" >
+    <button class="mondayMorning">11:00 - 11:05</button>
     <br>
-    <button>11:05 - 11:10</button>
+    <button class="mondayMorning2">11:05 - 11:10</button>
     <br>
-    <button>11:10 - 11:15</button>
+    <button class="mondayMorning3">11:10 - 11:15</button>
 </div>
    <div class="time-morning2">
    <button>11:00 - 11:05</button>
@@ -157,7 +157,7 @@ define('__CONFIG__', true);
     <button>13:20 - 13:30</button>
   </div>
 
-  <div class="time-noon">
+  <div class="time-noon3">
   <button>12.30 - 12.40</button>
     <br>
      <button>12:40 - 12:50</button>
@@ -238,5 +238,30 @@ define('__CONFIG__', true);
     <button>15:40 - 13:45</button>
 </div>
 </div>
+
+
+
+<script>
+
+// Monday 
+
+//morning
+document.querySelector('.mondayMorning').addEventListener('click', mondayMorning)
+document.querySelector('.mondayMorning2').addEventListener('click', mondayMorning)
+document.querySelector('.mondayMorning3').addEventListener('click', mondayMorning)
+
+
+
+const morning1 = document.querySelector('.time-morning1');
+morning1.style.color='orange';
+function mondayMorning(){
+  console.log('testke he')
+}
+
+
+
+
+
+</script>
 
 </body>

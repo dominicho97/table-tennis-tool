@@ -26,9 +26,9 @@ li a:hover {
 body {
   margin: 0;
   padding: 0;
-  background: #245060;
+  background: white;
 }
-
+/*#245060*/
 .signup-form {
   width: 300px;
   padding: 20px;

@@ -51,7 +51,7 @@ define('__CONFIG__', true);
 
 <!--select boxes-->
     <div class='wrapper-options'>
-  <select id = "selectbox1" onChange = "changeTime1()">
+  <select class = "selectbox1" onChange = "changeTime1()">
     <option value="morning">Morning</option>
     <option value="noon">Noon</option>
     <option value="afternoon">Afternoon</option>
@@ -195,23 +195,14 @@ define('__CONFIG__', true);
     <div>15:40 - 13:45</div>
 </div>
 </div>
+
+
+
+
+
+
+
   <script> 
-
-  const morning1 = document.getElementById('.time-morning1');
-
-
-  const select1 = document.getElementById('selectbox1');
-
-  function hide1(){
-    if (select1 === 'noon'){
-    morning1.style.visibility= 'hidden';
-  };
-  }
-   
-
-
-
-
 
 
 
@@ -222,31 +213,44 @@ define('__CONFIG__', true);
 
   // Select events
   function changeTime1(){
-    const select1 = document.getElementById('selectbox1');
+    const select1 = document.querySelector('.selectbox1');
     console.log(select1.options[select1.selectedIndex].value)}
   
-      changeTime1();
+      //changeTime1();
 
   function changeTime2(){
     const select2 = document.getElementById('selectbox2');
    console.log(select2.options[select2.selectedIndex].value)}
-   changeTime2();
+   //changeTime2();
 
   function changeTime3(){
     const select3 = document.getElementById('selectbox3');
     console.log(select3.options[select3.selectedIndex].value)}
-    changeTime3();
+   // changeTime3();
   
   function changeTime4(){
     const select4 = document.getElementById('selectbox4');
     console.log(select4.options[select4.selectedIndex].value)}
-    changeTime4();
+    //changeTime4();
   
   function changeTime5() {
     const select5 = document.getElementById('selectbox5');
     console.log(select5.options[select5.selectedIndex].value)}
 
-    changeTime5();
+    //changeTime5();
+
+
+
+
+
+  const morning1 = document.querySelector('.time-morning1');
+  const noon1 = document.querySelector('.time-noon1');
+  const afternoon1 = document.querySelector('.time-afternoon1')
+  const select1 = document.querySelector('.selectbox1');
+
+ 
+
+
 
 
 </script>

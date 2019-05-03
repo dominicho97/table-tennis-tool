@@ -3,6 +3,18 @@
 define('__CONFIG__', true);
 //require the conf
 //require_once 'inc/config.php';
+include('../classes/DB.php');
+if (isset($_POST['register'])) {
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+  $password2 = $_POST['password2'];
+  
+
+DB::query('INSERT INTO users VALUES (\'\', :username, :email, :password,:password2)', array(':username'=>$username, ':email'=>$email, ':password'=>$password,':password2'=>$password2, ));
+echo "Success!";
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +58,7 @@ define('__CONFIG__', true);
         <input type="email" name= 'email'placeholder="Email"class="field"><br>
         <input type="password" name= 'password'placeholder="Password"class="field"><br>
        <input type="password" name= 'password2'placeholder= "Confirm password" class="field"><br>
-        <input type="text" name= 'room'placeholder="Group"class="field"><br>
+      <!--  <input type="text" name= 'room'placeholder="Group"class="field"><br>-->
         <input name= 'register' type="submit"  class="signup-btn" value='Register'>  <a href='../login/login.php'>Already have an account?</a>
     </form>
 </div>
