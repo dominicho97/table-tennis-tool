@@ -1,45 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<div className="nav">
-      <ul>
-        <li>
-          <a className="active" href="index.php">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="./login/login.php">Log In</a>
-        </li>
-        <li>
-          <a href="./register/register.php">Register</a>
-        </li>
-        <li>
-          <a href="./schedule/schedule.php">Schedule</a>
-        </li>
-        <li>
-          <a href="./reservation/reservation.php">Make a reservation!</a>
-        </li>
-      </ul>
-    </div>
+<?php
+ini_set('display_errors', true);
+error_reporting(E_ALL);
 
+session_start();
 
-    <div class="main-form">
-    <h1>Table Booker!</h1>
+// $_SESSION['name'] = ["id"=>"1", "user"=>"jimmy", "room"=>"1"];
 
-     <a href="./register/register.php"   class="main-btn">
-    <input  value='Register'  class="main-btn" name= 'login'> 
+$_name = $_SESSION['name'] ?? '';
 
+$_thisPage = $_GET['page'] ?? '';
 
-    <a href="./login/login.php"   class="main-btn">
-    <input  value='Log In'  class="main-btn" name= 'login'> 
+if($_name == '' && $_thisPage != 'login'){
+  header('Location: users.php?page=login');
+} elseif(basename($_SERVER['PHP_SELF'], '.php') == 'index'){
+  header('Location: calander.php');
+}
 
-</body>
-</html>
+$routes = array(
+  'calander' => array(
+    'controller' => 'Calander',
+    'action' => 'index'
+  ),
+  'login' => array(
+    'controller' => 'Users',
+    'action' => 'login'
+  ),
+);
+
+if (empty($routes[basename($_SERVER['PHP_SELF'], '.php')])) {
+  header('Location: calander.php');
+}
+
+empty($_GET['page']) ? $_page = '' : $_page = '-' . $_GET['page'];
+
+$route = $routes[basename($_SERVER['PHP_SELF'], '.php') . $_page];
+$controllerName = $route['controller'] . 'Controller';
+
+require_once __DIR__ . '/controller/' . $controllerName . ".php";
+
+$controllerObj = new $controllerName();
+$controllerObj->route = $route;
+$controllerObj->filter();
+$controllerObj->render();

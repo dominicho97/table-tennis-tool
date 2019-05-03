@@ -1,0 +1,339 @@
+/* *{
+  padding: 0;
+  margin: 0;
+}
+
+.weak{
+  display: flex;
+}
+
+.day{
+  width: 20%;
+}
+
+#deleteForm{
+  display: none;
+} */
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+
+
+/* --------------------------------------- */
+
+#container {
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: lightgrey;
+}
+
+header h6 {
+  padding: 5%;
+  margin-bottom: 0px;
+}
+
+.dayButtons ul {
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  list-style: none;
+  margin-top: 19%;
+}
+
+.dayButtons .dayBtn {
+  font-size: 0.8em;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.monday {
+  display: none;
+}
+
+.tuesday {
+  display: none;
+}
+
+.wednesday {
+  display: none;
+}
+
+.thursday {
+  display: none;
+}
+
+.friday {
+  display: none;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 20px 6px 20px;
+  margin-top: 50px;
+}
+
+.navigationList {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.5em;
+  padding-left: 0px;
+}
+
+.navigationList li i {
+  color: black;
+}
+
+.bottomnav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: lightgrey;
+  background-image: linear-gradient(left, white, white 33%, transparent 33%, transparent 100%);
+  background-image: -webkit-linear-gradient(left, white, white 33%, transparent 33%, transparent 100%)
+}
+
+.activeButton {
+  background-color: black;
+  color: white;
+}
+
+.overlay {
+  height: 60%;
+  width: 85%;
+  margin: 0 auto;
+  background: lightgrey;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  left: 7.5%;
+  z-index: 1000;
+  display:none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.overlay h3 {
+  margin-top: 60px;
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+  margin-top: 20px;
+}
+
+.target {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------------   MONDAY */
+.mondayMorning,
+.mondayNoon,
+.mondayAfternoon {
+  margin-top: 45px;
+}
+
+.mondayMorning div,
+.mondayAfternoon div,
+.time p {
+  background-color: lightgrey;
+  border-radius: 10px 10px/10px;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.mondayMorning div p,
+.mondayAfternoon div p,
+.mondayNoon .time p {
+  margin: 0px;
+}
+
+.mondayNoon .time p {
+  font-size: 0.9em;
+  padding: 22px;
+  margin: 0px 0px 15px 0px;
+}
+
+/* --------------------------------------------------------------------------------   TUESDAY */
+.tuesdayMorning,
+.tuesdayNoon,
+.tuesdayAfternoon {
+  margin-top: 45px;
+}
+
+.tuesdayMorning div,
+.tuesdayAfternoon div,
+.time p {
+  background-color: lightgrey;
+  border-radius: 10px 10px/10px;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.tuesdayMorning div p,
+.tuesdayAfternoon div p,
+.tuesdayNoon .time p {
+  margin: 0px;
+}
+
+.tuesdayNoon .time p {
+  font-size: 0.9em;
+  padding: 22px;
+  margin: 0px 0px 15px 0px;
+}
+
+/* --------------------------------------------------------------------------------   WEDNESDAY */
+.wednesdayMorning,
+.wednesdayNoon,
+.wednesdayAfternoon {
+  margin-top: 45px;
+}
+
+.wednesdayMorning div,
+.wednesdayAfternoon div,
+.time p {
+  background-color: lightgrey;
+  border-radius: 10px 10px/10px;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.wednesdayMorning div p,
+.wednesdayAfternoon div p,
+.wednesdayNoon .time p {
+  margin: 0px;
+}
+
+.wednesdayNoon .time p {
+  font-size: 0.9em;
+  padding: 22px;
+  margin: 0px 0px 20px 0px;
+}
+
+/* --------------------------------------------------------------------------------   THURSDAY */
+.thursdayMorning,
+.thursdayNoon,
+.thursdayAfternoon {
+  margin-top: 45px;
+}
+
+.thursdayMorning div,
+.thursdayAfternoon div,
+.time p {
+  background-color: lightgrey;
+  border-radius: 10px 10px/10px;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.thursdayMorning div p,
+.thursdayAfternoon div p,
+.thursdayNoon .time p {
+  margin: 0px;
+}
+
+.thursdayNoon .time p {
+  font-size: 0.9em;
+  padding: 22px;
+  margin: 0px 0px 15px 0px;
+}
+
+/* --------------------------------------------------------------------------------   FRIDAY */
+.fridayMorning,
+.fridayNoon,
+.fridayAfternoon {
+  margin-top: 45px;
+}
+
+.fridayMorning div,
+.fridayAfternoon div,
+.time p {
+  background-color: lightgrey;
+  border-radius: 10px 10px/10px;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.fridayMorning div p,
+.fridayAfternoon div p,
+.fridayNoon .time p {
+  margin: 0px;
+}
+
+.fridayNoon .time p {
+  font-size: 0.9em;
+  padding: 22px;
+  margin: 0px 0px 15px 0px;
+}
