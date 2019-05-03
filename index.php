@@ -11,7 +11,7 @@ $_name = $_SESSION['name'] ?? '';
 $_thisPage = $_GET['page'] ?? '';
 
 if($_name == '' && $_thisPage != 'login'){
-  header('Location: users.php?page=login');
+  header('Location: login.php');
 } elseif(basename($_SERVER['PHP_SELF'], '.php') == 'index'){
   header('Location: calander.php');
 }
